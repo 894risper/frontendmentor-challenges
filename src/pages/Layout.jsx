@@ -3,9 +3,9 @@
   
   const Layout = () => {
     return (
-      <div>
-        <nav>
-            <ul>
+      <div className='flex h-screen'  >
+        <nav className='bg-slate-600 w-28 p-4'>
+            <ul className='flex flex-col '>
                 <li>
                    <Link to="/">Home</Link> 
                 </li>
@@ -14,7 +14,9 @@
                 </li>
             </ul>
         </nav>
+        <div className='flex-grow'>
         <Outlet/>
+        </div>
       </div>
     )
   }

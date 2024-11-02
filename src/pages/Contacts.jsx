@@ -13,9 +13,11 @@ const Contacts = () => {
   };
 
   return (
-    <div>
-      <h1>Contact Us</h1>
-      <form onSubmit={handleSubmit(handleFormSubmit)}>
+
+    <div className=' flex items-center justify-center h-full' >
+      <div className='p-6 bg-white shadow-lg rounded-md'>
+      <h1 className='font-bold text-lg'>Contact Us</h1>
+      <form onSubmit={handleSubmit(handleFormSubmit)} className=''>
         <div>
           <label htmlFor="fname">First Name</label>
           <input 
@@ -142,6 +144,7 @@ const Contacts = () => {
           Submit
         </button>
       </form>
+    </div>
     </div>
   );
 }
